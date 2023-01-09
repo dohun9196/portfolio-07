@@ -30,5 +30,23 @@ $(function () {
 
 
 
+    var cover = $('.mainBusiness .flex_inner .busi_cover')
+    var covero = $('.mainBusiness .flex_inner .busi_cover.on')
+    var moreA = $('.mainBusiness .flex_inner figure .more a')
+    var moreAo = $('.mainBusiness .flex_inner figure .more a.on')
+
+    $(moreA).hover(function (e) {
+        $(moreA).addClass('on');
+    }, function (e) {
+
+        $(moreA).removeClass('on');
+
+        if ($(moreA) == $(moreAo)) {
+            $(cover).toggleClass('on');
+        }
+        // else if (moreA == $('.more a')) {
+        //     $('.mainBusiness .flex_inner .busi_cover').removeClass('on');
+        // }
+    });
 
 });
