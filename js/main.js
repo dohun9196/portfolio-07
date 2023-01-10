@@ -13,6 +13,7 @@ $(function () {
     });
 
 
+
     $(window).scroll(function () {
         var scrollValue = $(document).scrollTop();
         console.log(scrollValue);
@@ -30,23 +31,24 @@ $(function () {
 
 
 
-    var cover = $('.mainBusiness .flex_inner .busi_cover')
-    var covero = $('.mainBusiness .flex_inner .busi_cover.on')
-    var moreA = $('.mainBusiness .flex_inner figure .more a')
-    var moreAo = $('.mainBusiness .flex_inner figure .more a.on')
 
-    $(moreA).hover(function (e) {
-        $(moreA).addClass('on');
-    }, function (e) {
 
-        $(moreA).removeClass('on');
+    $('#header').hover(function () {
+        $('#header').addClass('top');
+    }, function () {
+        $('#header').removeClass('top');
 
-        if ($(moreA) == $(moreAo)) {
-            $(cover).toggleClass('on');
-        }
-        // else if (moreA == $('.more a')) {
-        //     $('.mainBusiness .flex_inner .busi_cover').removeClass('on');
-        // }
     });
+
+    window.scrollTo(0, 850);
+
+    $('.sc_down a').click(function () {
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'window.scrollTo(0, 850)')).offset().top
+        }, 400);
+        return false;
+    });
+
 
 });

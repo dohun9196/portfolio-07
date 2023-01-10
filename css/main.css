@@ -1,4 +1,37 @@
-.mainVisual {}
+.mainVisual {
+    position: relative;
+}
+
+.mainVisual .sc_down {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    margin: 0 auto;
+}
+
+.mainVisual .sc_down i {
+    display: block;
+    font-size: 30px;
+    color: #fff;
+
+    text-shadow: 0 0 10px #000;
+}
+
+.mainVisual .sc_down i::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline;
+    width: 15px;
+    height: 20px;
+    border-radius: 10px;
+    background: #ec0007;
+    z-index: -1;
+}
 
 .mainVisual .main_slide {
     position: relative;
@@ -7,18 +40,22 @@
     font-size: 0;
 }
 
-.mainVisual .main_slide figure:nth-child(1) {
+.mainVisual .main_slide figure {
     height: 100vh;
+}
+
+.mainVisual .main_slide figure:nth-child(1) {
+
     background: url(../img/main_page/mainVisual01.jpg)no-repeat center center/cover;
 }
 
 .mainVisual .main_slide figure:nth-child(2) {
-    height: 100vh;
+
     background: url(../img/main_page/mainVisual02.jpg)no-repeat center center/cover;
 }
 
 .mainVisual .main_slide figure:nth-child(3) {
-    height: 100vh;
+
     background: url(../img/main_page/mainVisual03.jpg)no-repeat center center/cover;
 }
 
@@ -158,7 +195,57 @@
 
 .mainBusiness .flex_inner figure {
     position: relative;
+    text-align: center;
 }
+
+.mainBusiness .flex_inner figure p {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 50px;
+    transform: translate(-50%, 0);
+
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: 500;
+
+    transition: 0.5s;
+    z-index: 100;
+}
+
+.mainBusiness .flex_inner figure:hover p {
+    color: #fff;
+}
+
+/* .mainBusiness .flex_inner figure p::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 100%;
+    height: 50px;
+
+    background: rgba(0, 0, 0, 0.0);
+    transition: 1s;
+}
+
+.mainBusiness .flex_inner figure:hover p::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 100%;
+    height: 50px;
+
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -9;
+} */
+
 
 .mainBusiness .flex_inner figure::after {
     content: "";
@@ -169,19 +256,14 @@
     height: calc(100% - 60px);
     background: rgba(0, 0, 0, 0.4);
     z-index: 99;
-    transition: 0.5s;
+    transition: 0.9s;
 }
 
 .mainBusiness .flex_inner figure:hover::after {
     content: "";
-    position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: calc(100% - 60px);
-    background: none;
-    z-index: 99;
-    transition: 0.5s;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .mainBusiness .flex_inner .more {
@@ -203,12 +285,12 @@
 
 .mainNotice {
     position: relative;
+    padding: 50px 0 50px 0;
+    background: #ee1623;
 }
 
 .mainNotice .notice_topbg {
-    position: absolute;
-    top: 100px;
-    left: 0;
+
     width: 100%;
     height: 150px;
     background: url(../img/main_page/main_bg01.jpg) no-repeat 50% 50%/cover;
@@ -221,7 +303,53 @@
 
 }
 
-.mainNotice .flex_inner .box {
-    text-align: center;
-    padding: 60px 0;
+.mainNotice .flex_inner .nobox {
+    position: relative;
+    width: 370px;
+    text-align: left;
+    padding: 37.5px 0;
+}
+
+.mainNotice .flex_inner .nobox::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -22.5px;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 70px;
+    background: #ddd;
+}
+
+.mainNotice .flex_inner .nobox:last-child::after {
+    content: none;
+}
+
+.mainNotice .flex_inner .nobox a {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.mainNotice .flex_inner .nobox a .noticeTxt {
+    flex: 1 0 70%;
+    padding: 25px 0 0 0;
+}
+
+
+.mainNotice .flex_inner .nobox .noticeImg img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.mainNotice .nobox .noticeTxt strong {
+    display: block;
+    font-size: 25px;
+    margin: 0 0 10px 0;
+}
+
+.mainNotice .nobox .noticeTxt p {
+    display: block;
+    font-size: 15px;
 }
