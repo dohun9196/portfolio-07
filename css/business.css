@@ -1,0 +1,245 @@
+.about01_ceoB {}
+
+.about01_ceoB .top {
+    position: relative;
+}
+
+.about01_ceoB .top .t_txt {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 1200px;
+    margin: 0 auto;
+
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 1px #333;
+}
+
+.about01_ceoB .top .t_txt h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+.about01_ceoB .top .t_txt p {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.about01_ceoB .inner.nav {
+    position: relative;
+    gap: 0px;
+    top: -20px;
+    justify-content: space-between;
+
+}
+
+.about01_ceoB .inner.nav .ab_nav {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #fd6e56 0%, #e60013 100%);
+}
+
+.about01_ceoB .inner.nav .ab_nav>li {
+    flex: 1;
+
+}
+
+.about01_ceoB .inner.nav .ab_nav>li>a {
+    display: block;
+    padding: 20px 30px;
+
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.about01_ceoB .inner.nav .ab_nav .home_gnb a {
+    line-height: 0px;
+    background: #2d2d2d;
+}
+
+.about01_ceoB .inner.nav .ab_nav .head_gnb {
+    position: relative;
+
+}
+
+.about01_ceoB .inner.nav .ab_nav .head_gnb i {
+    display: inline-block;
+    float: right;
+}
+
+.about01_ceoB .inner.nav .ab_nav .head_gnb::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    display: inline-block;
+    width: 1px;
+    height: 30px;
+    background: #bbb;
+}
+
+.about01_ceoB .inner.nav .ab_nav .head_gnb .sub_nav {
+    position: absolute;
+    top: 60px;
+
+    width: 400px;
+    height: 220px;
+
+    background: #fff;
+
+    text-align: right;
+    line-height: 1.5;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+
+    z-index: 100;
+}
+
+.about01_ceoB .inner.nav .ab_nav .head_gnb.on .sub_nav {
+    visibility: visible;
+    opacity: 1;
+}
+
+.about01_ceoB .inner.nav .ab_nav .head_gnb .sub_nav li a {
+    border: 1px solid #ddd;
+    transition: 0.5s;
+}
+
+
+.about01_ceoB .inner.nav .ab_nav .ab_gnb .sub_nav {
+    position: absolute;
+    top: 60px;
+
+    width: 400px;
+    height: 112px;
+
+    background: #fff;
+
+    text-align: right;
+    line-height: 1.5;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+
+    z-index: 100;
+}
+
+.about01_ceoB .inner.nav .ab_nav .ab_gnb.on .sub_nav {
+    visibility: visible;
+    opacity: 1;
+}
+
+.about01_ceoB .inner.nav .ab_nav .ab_gnb .sub_nav li a {
+    border: 1px solid #ddd;
+    transition: 0.5s;
+}
+
+.about01_ceoB .sub_nav>li>a {
+    display: block;
+    padding: 15px 20px;
+}
+
+
+.about01_ceoB .inner.nav .ab_nav .ab_gnb i {
+    display: inline-block;
+    float: right;
+}
+
+.mainBusiness01 .inner.business01 {
+    border-bottom: 1px solid #ddd;
+}
+
+.mainBusiness01 .inner.business01 h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+
+}
+
+.mainBusiness01 .flex_inner.business01 {
+    flex-wrap: wrap;
+
+    padding: 50px 0;
+    gap: 30px;
+    justify-content: flex-start;
+}
+
+.mainBusiness01 .flex_inner.business01 .bus_img {
+    position: relative;
+    width: 216px;
+
+    border-radius: 20px;
+    border: 1px solid #ddd;
+
+    vertical-align: middle;
+    text-align: center;
+    box-shadow: 3px 3px 3px #eaeaea;
+    cursor: pointer;
+}
+
+.mainBusiness01 .flex_inner.business01 .bus_img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.mainBusiness01 .flex_inner.business01 .bus_img:hover::after {
+    content: "";
+    border: 1px solid #e60013;
+    opacity: 1;
+}
+
+
+.bus_img a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.bus_img img {
+    padding: 30px 30px 70px 30px;
+}
+
+.bus_img .bus_text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.bus_img .bus_text strong {
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.bus_img .bus_text p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #888;
+}

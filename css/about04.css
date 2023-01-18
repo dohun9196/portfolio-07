@@ -1,0 +1,88 @@
+.mainAbout04 .inner {
+    text-align: center;
+}
+
+.mainAbout04 .inner h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.mainAbout04 .inner strong {
+    font-size: 45px;
+    font-weight: 700;
+    color: #f1231f;
+}
+
+.mainAbout04 .inner span {
+    display: block;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+}
+
+.mainAbout04 .inner p {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #888;
+    margin: 0 0 50px 0;
+}
+
+.mainAbout04 .ci01 {
+    background: url(../img/ci/ci_bg.gif);
+    padding: 50px 0 0 0;
+    border: 1px solid #ddd;
+    margin: 0 0 50px 0;
+}
+
+.mainAbout04 .ci01 .flex_inner.ci_f {
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.mainAbout04 .ci01 .desc_ci {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+.mainAbout04 .ci01 .desc_ci span {
+    display: inline-block;
+
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    background: #f1231f;
+    padding: 10px 50px;
+}
+
+.mainAbout04 .ci01 .desc_ci .logotype {
+    display: inline-block;
+
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    background: #3d3d3d;
+    padding: 10px 50px;
+}
+
+.mainAbout04 .ci_download a {
+    display: inline-block;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    padding: 10px 50px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.mainAbout04 .ci_download i {
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+}
+
+.mainAbout04 .ci_download a:hover {
+    color: #fff;
+    background: #3d3d3d;
+}

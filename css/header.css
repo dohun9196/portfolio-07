@@ -1,6 +1,6 @@
 /* 스크롤시 헤더 변화 시작 */
 #header.on {
-    background: #fff;
+    background: #fafafa;
     color: #222;
     text-shadow: none;
 }
@@ -59,7 +59,7 @@
 
 #header.top {
 
-    background: #fff;
+    background: #fafafa;
     color: #222;
     text-shadow: none;
 }
@@ -170,8 +170,9 @@
     right: 0;
     line-height: 50px;
     height: 0px;
-    background: #fff;
+    background: #fafafa;
     border-top: 1px solid #ddd;
+    border-bottom: 1px solid #f9f9f9;
 
     transition: 0.5s;
     display: none;

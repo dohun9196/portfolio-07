@@ -59,3 +59,27 @@
     text-align: left;
 
 }
+
+/* 상단위치 이동 버튼 */
+
+#top_btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#top_btn a {
+    width: 0;
+    height: 0;
+    font-size: 0;
+}
+
+#top_btn a.on {
+    display: block;
+    font-size: 0;
+    width: 60px;
+    height: 60px;
+    background: url(../img/main_page/next-arrow.png)no-repeat center center/cover;
+    transform: rotate(-90deg);
+    transition: 0.5s;
+}

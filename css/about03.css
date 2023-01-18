@@ -1,0 +1,65 @@
+.mainAbout03 .inner .his dl {
+    position: relative;
+    padding-left: 170px;
+    padding-bottom: 40px;
+    min-height: 50px;
+}
+
+.mainAbout03 .inner .his dl~::before {
+    content: '';
+    position: absolute;
+    left: 165px;
+    top: 13px;
+    width: 10px;
+    height: 10px;
+    background: #999;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.mainAbout03 .inner .his dl:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    left: 165px;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    background: #999;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.mainAbout03 .inner .his dl::after {
+    content: '';
+    position: absolute;
+    left: 170px;
+    top: 10px;
+    width: 1px;
+    height: 100%;
+    background: #ddd;
+}
+
+.mainAbout03 .inner .his dt {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    font-weight: bold;
+    font-size: 38px;
+    color: #222;
+}
+
+.mainAbout03 .inner .his dd {
+    position: relative;
+    padding-left: 118px;
+    font-size: 16px;
+    line-height: 37px;
+}
+
+.mainAbout03 .inner .his dd strong {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 35px;
+    font-size: 18px;
+    color: #000;
+}
